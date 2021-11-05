@@ -91,7 +91,7 @@ When executed, the bundle will display the following GUI:
 
 Each MSI installer is installed in its own directory just as it would be installed if executed individually.
 
-![image-20211105201604776](C:\Users\alexandru.iuga\AppData\Roaming\Typora\typora-user-images\image-20211105201604776.png)
+![Install Directory](install-directory.png)
 
 In "Programs and Features" only the bundle is displayed. No record for the individual MSI installers is added.
 
