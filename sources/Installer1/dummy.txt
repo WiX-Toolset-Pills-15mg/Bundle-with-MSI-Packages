@@ -1,0 +1,4 @@
+﻿Installer 1 - Part of the Bundle with MSI project
+================================================================================
+
+This file is part of the first MSI that is installed by the BundleWithMsi bundle.

@@ -1,0 +1,4 @@
+﻿Installer 2 - Part of the Bundle with MSI project
+================================================================================
+
+This file is part of the second MSI that is installed by the BundleWithMsi bundle.

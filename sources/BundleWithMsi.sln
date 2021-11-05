@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer1", "Installer1\Installer1.wixproj", "{F841CB15-E43A-45DB-80AA-44879F39694E}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BundleWithMsi", "BundleWithMsi\BundleWithMsi.wixproj", "{EEF1A17E-E0ED-432C-B45B-6F5510E8ECB4}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer2", "Installer2\Installer2.wixproj", "{A5D265C1-CAB3-4115-BC52-DD7A58F25369}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F841CB15-E43A-45DB-80AA-44879F39694E}.Debug|x86.ActiveCfg = Debug|x86
+		{F841CB15-E43A-45DB-80AA-44879F39694E}.Debug|x86.Build.0 = Debug|x86
+		{F841CB15-E43A-45DB-80AA-44879F39694E}.Release|x86.ActiveCfg = Release|x86
+		{F841CB15-E43A-45DB-80AA-44879F39694E}.Release|x86.Build.0 = Release|x86
+		{EEF1A17E-E0ED-432C-B45B-6F5510E8ECB4}.Debug|x86.ActiveCfg = Debug|x86
+		{EEF1A17E-E0ED-432C-B45B-6F5510E8ECB4}.Debug|x86.Build.0 = Debug|x86
+		{EEF1A17E-E0ED-432C-B45B-6F5510E8ECB4}.Release|x86.ActiveCfg = Release|x86
+		{EEF1A17E-E0ED-432C-B45B-6F5510E8ECB4}.Release|x86.Build.0 = Release|x86
+		{A5D265C1-CAB3-4115-BC52-DD7A58F25369}.Debug|x86.ActiveCfg = Debug|x86
+		{A5D265C1-CAB3-4115-BC52-DD7A58F25369}.Debug|x86.Build.0 = Debug|x86
+		{A5D265C1-CAB3-4115-BC52-DD7A58F25369}.Release|x86.ActiveCfg = Release|x86
+		{A5D265C1-CAB3-4115-BC52-DD7A58F25369}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {211A6108-0F59-425C-9347-D0CD6639DBD6}
+	EndGlobalSection
+EndGlobal
