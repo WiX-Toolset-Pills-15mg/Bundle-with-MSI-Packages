@@ -13,7 +13,7 @@ First of all, we need to create two dummy MSI projects. These will be, later, in
 The focus of the current pill is the bundle itself. Therefore, for more details about creating the dummy installers:
 
 -  check out the example in the `sources` directory or, for even more details,
-- check out the "Deploy Files" tutorial here: https://github.com/WiX-Toolset-Pills-15mg/Deploy-Files
+- check out the "My First Installer" tutorial here: https://github.com/WiX-Toolset-Pills-15mg/My-First-Installer
 
 **Note**: The two MSI files created by these projects are two normal installers that can also be installed independently.
 
