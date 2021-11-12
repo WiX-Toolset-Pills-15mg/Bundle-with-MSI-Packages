@@ -1,4 +1,7 @@
-﻿Installer 2 - Part of the Bundle with MSI project
+﻿Installer 2 - Part of the Bundle with MSI project (a WiX Toolset Pill)
 ================================================================================
 
-This file is part of the second MSI that is installed by the BundleWithMsi bundle.
+The ""Bundle with MSI" project is an example that demonstrates how to include MSI packages into a bundle.
+
+For more details please check the GitHub repository:
+https://github.com/WiX-Toolset-Pills-15mg/Bundle-with-MSI

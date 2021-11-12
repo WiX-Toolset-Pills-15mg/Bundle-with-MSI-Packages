@@ -6,7 +6,9 @@
 
 ## Description
 
-This pill will demonstrate how to create a bundle that will install two dummy MSI installers.
+This pill will demonstrate how to include MSI packages into a bundle.
+
+A step-by-step tutorial can be found in the `/doc/article` document, [here](doc/article/README.md).
 
 ## Donations
 

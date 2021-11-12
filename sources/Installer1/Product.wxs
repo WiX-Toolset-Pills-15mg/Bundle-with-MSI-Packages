@@ -20,7 +20,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
-    <Product Id="*" Name="Bundle with MSI Installer 1 - WiX Toolset Pill" Language="1033" Version="1.0.0.0" Manufacturer="Dust in the Wind" UpgradeCode="dab962de-b52a-4e9a-bd44-e14c8b11441b">
+    <Product
+        Id="*"
+        Name="Bundle with MSI Installer 1 - WiX Toolset Pill"
+        Language="1033"
+        Version="1.0.0.0"
+        Manufacturer="Dust in the Wind"
+        UpgradeCode="dab962de-b52a-4e9a-bd44-e14c8b11441b">
+
         <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
         <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
