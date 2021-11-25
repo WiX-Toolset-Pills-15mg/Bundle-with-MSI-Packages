@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-Wix Toolset Pills 15mg
+WiX Toolset Pills 15mg
 Copyright (C) 2019-2021 Dust in the Wind
 
 This program is free software: you can redistribute it and/or modify
@@ -20,7 +20,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
-    <Bundle Name="Bundle with MSI - WiX Toolset Pill" Version="1.0.0.0" Manufacturer="Dust in the Wind" UpgradeCode="eef1a17e-e0ed-432c-b45b-6f5510e8ecb4">
+    <Bundle
+        Name="Bundle with MSI - WiX Toolset Pill"
+        Version="1.0.0.0"
+        Manufacturer="Dust in the Wind"
+        UpgradeCode="eef1a17e-e0ed-432c-b45b-6f5510e8ecb4">
 
         <!--
         The bootstrapper application is the one that runs the whole bundle. It may also provide a GUI.
