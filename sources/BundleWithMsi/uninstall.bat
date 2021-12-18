@@ -1,0 +1,1 @@
+BundleWithMsi.exe /l uninstall.log
