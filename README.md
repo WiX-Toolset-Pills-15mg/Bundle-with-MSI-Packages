@@ -1,9 +1,5 @@
 # Bundle with MSI
 
-## Question
-
-- How to create a bundle containing multiple MSI packages?
-
 ## Description
 
 This pill will demonstrate how to include MSI packages into a bundle.

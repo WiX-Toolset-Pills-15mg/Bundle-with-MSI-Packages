@@ -20,6 +20,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bundle.wxs" />
+    <Compile Include="Installer1Package.wxs" />
+    <Compile Include="Installer2Package.wxs" />
   </ItemGroup>
   <ItemGroup>
     <WixExtension Include="WixBalExtension">
@@ -46,6 +48,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="install-with-parameters.bat" />
     <Content Include="uninstall.bat" />
     <Content Include="install.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

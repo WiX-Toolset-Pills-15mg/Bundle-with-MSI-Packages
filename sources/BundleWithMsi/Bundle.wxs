@@ -18,7 +18,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Wix
+    xmlns="http://schemas.microsoft.com/wix/2006/wi"
+    xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
 
     <Bundle
         Name="Bundle with MSI - WiX Toolset Pill"
@@ -28,18 +30,52 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <!--
         The bootstrapper application is the one that runs the whole bundle. It may also provide a GUI.
+        
         The one used in this demo (provided out of the box by WiX Toolset) displays a GUI with a single page
-        containing a dummy license agreement.
+        containing a dummy license agreement and installs all the packages provided in the chain.
         -->
         <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
 
-
         <!--
-        Add each MSI package in the desired order of execution.
+        ====================================================================================================
+        Step 1: Create Public Variables
+        ====================================================================================================
+        
+        These two public variables will be sent to the two installers installed by this bundle.
+        
+        Go To: Installer1Package.wxs
         -->
+
+        <Variable
+            Name="Message1"
+            Type="string"
+            Value="This is the default message from bundle prepared for Installer 1."
+            Persisted="no"
+            bal:Overridable="yes" />
+
+        <Variable
+            Name="Message2"
+            Type="string"
+            Value="This is the default message from bundle prepared for Installer 2."
+            Persisted="no"
+            bal:Overridable="yes" />
+
         <Chain>
-            <MsiPackage SourceFile="$(var.Installer1.TargetDir)$(var.Installer1.TargetName).msi" />
-            <MsiPackage SourceFile="$(var.Installer2.TargetDir)$(var.Installer2.TargetName).msi" />
+
+            <!--
+            ====================================================================================================
+            Step 3: Add packages to the chain
+            ====================================================================================================
+            
+            Important note: The order specified here is the actual order in which the packages are installed when
+            the bundle is executed.
+            
+            END
+            -->
+
+            <PackageGroupRef Id="Installer1PackageGroup" />
+            <PackageGroupRef Id="Installer2PackageGroup" />
+
         </Chain>
 
     </Bundle>
