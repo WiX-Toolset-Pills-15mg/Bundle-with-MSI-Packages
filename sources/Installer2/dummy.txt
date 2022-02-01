@@ -1,7 +1,8 @@
-﻿Installer 2 - Part of the Bundle with MSI project (a WiX Toolset Pill)
-================================================================================
+﻿WiX Toolset Pills 15mg - Installer 2 - Part of the Bundle with MSI Packages project
+====================================================================================================
 
-The "Bundle with MSI" project is an example that demonstrates how to include MSI packages into a bundle.
+The "Bundle with MSI Packages" project is an example that demonstrates how to include MSI packages
+into a bundle.
 
 For more details please check the GitHub repository:
 https://github.com/WiX-Toolset-Pills-15mg/Bundle-with-MSI

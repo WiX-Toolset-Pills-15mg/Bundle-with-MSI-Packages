@@ -1,0 +1,70 @@
+[7668:3F78][2022-02-01T14:05:26]i001: Burn v3.11.100.14523, Windows v10.0 (Build 19044: Service Pack 0), path: C:\Users\ALEXAN~1.IUG\AppData\Local\Temp\{F87B76D7-7F30-4D1A-BCF3-C4E1C7870524}\.cr\BundleWithMsiPackages.exe
+[7668:3F78][2022-02-01T14:05:26]i000: Initializing string variable 'Message1' to value 'This is the default message from bundle prepared for Installer 1.'
+[7668:3F78][2022-02-01T14:05:26]i000: Initializing string variable 'Message2' to value 'This is the default message from bundle prepared for Installer 2.'
+[7668:3F78][2022-02-01T14:05:26]i009: Command Line: '"-burn.clean.room=c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\BundleWithMsiPackages.exe" -burn.filehandle.attached=560 -burn.filehandle.self=576 /l uninstall.log'
+[7668:3F78][2022-02-01T14:05:26]i000: Setting string variable 'WixBundleOriginalSource' to value 'c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\BundleWithMsiPackages.exe'
+[7668:3F78][2022-02-01T14:05:26]i000: Setting string variable 'WixBundleOriginalSourceFolder' to value 'c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\'
+[7668:3F78][2022-02-01T14:05:26]i000: Setting string variable 'WixBundleLog' to value 'c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall.log'
+[7668:3F78][2022-02-01T14:05:26]i000: Setting string variable 'WixBundleManufacturer' to value 'Dust in the Wind'
+[7668:A8C0][2022-02-01T14:05:26]i000: Setting numeric variable 'WixStdBALanguageId' to value 1033
+[7668:A8C0][2022-02-01T14:05:26]i000: Setting version variable 'WixBundleFileVersion' to value '1.0.0.0'
+[7668:3F78][2022-02-01T14:05:26]i100: Detect begin, 2 packages
+[7668:3F78][2022-02-01T14:05:26]i101: Detected package: Installer1.msi, state: Present, cached: Complete
+[7668:3F78][2022-02-01T14:05:26]i101: Detected package: Installer2.msi, state: Present, cached: Complete
+[7668:3F78][2022-02-01T14:05:26]i199: Detect complete, result: 0x0
+[7668:3F78][2022-02-01T14:05:33]i200: Plan begin, 2 packages, action: Uninstall
+[7668:3F78][2022-02-01T14:05:33]i000: Setting string variable 'WixBundleRollbackLog_Installer2.msi' to value 'c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_000_Installer2.msi_rollback.log'
+[7668:3F78][2022-02-01T14:05:33]i000: Setting string variable 'WixBundleLog_Installer2.msi' to value 'c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_000_Installer2.msi.log'
+[7668:3F78][2022-02-01T14:05:33]i000: Setting string variable 'WixBundleRollbackLog_Installer1.msi' to value 'c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_001_Installer1.msi_rollback.log'
+[7668:3F78][2022-02-01T14:05:33]i000: Setting string variable 'WixBundleLog_Installer1.msi' to value 'c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_001_Installer1.msi.log'
+[7668:3F78][2022-02-01T14:05:33]i201: Planned package: Installer2.msi, state: Present, default requested: Absent, ba requested: Absent, execute: Uninstall, rollback: Install, cache: No, uncache: Yes, dependency: Unregister
+[7668:3F78][2022-02-01T14:05:33]i201: Planned package: Installer1.msi, state: Present, default requested: Absent, ba requested: Absent, execute: Uninstall, rollback: Install, cache: No, uncache: Yes, dependency: Unregister
+[7668:3F78][2022-02-01T14:05:33]i299: Plan complete, result: 0x0
+[7668:3F78][2022-02-01T14:05:33]i300: Apply begin
+[7668:3F78][2022-02-01T14:05:33]i010: Launching elevated engine process.
+[7668:3F78][2022-02-01T14:05:36]i011: Launched elevated engine process.
+[7668:3F78][2022-02-01T14:05:36]i012: Connected to elevated engine.
+[767C:1F9C][2022-02-01T14:05:36]i358: Pausing automatic updates.
+[767C:1F9C][2022-02-01T14:05:36]i359: Paused automatic updates.
+[767C:1F9C][2022-02-01T14:05:36]i360: Creating a system restore point.
+[767C:1F9C][2022-02-01T14:05:45]i361: Created a system restore point.
+[767C:1F9C][2022-02-01T14:05:45]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{d7a860e6-9f16-429e-b689-4d05816ebd3a}, resume: Active, restart initiated: No, disable resume: No
+[767C:1F9C][2022-02-01T14:05:45]i326: Removed dependency: {d7a860e6-9f16-429e-b689-4d05816ebd3a} on package provider: {C0B59F90-3A30-4401-8783-A2C3E64CA1DA}, package Installer2.msi
+[767C:1F9C][2022-02-01T14:05:45]i329: Removed package dependency provider: {C0B59F90-3A30-4401-8783-A2C3E64CA1DA}, package: Installer2.msi
+[767C:1F9C][2022-02-01T14:05:45]i301: Applying execute package: Installer2.msi, action: Uninstall, path: (null), arguments: ' ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7" MESSAGE="This is the default message from bundle prepared for Installer 2."'
+[7668:3F78][2022-02-01T14:05:45]i319: Applied execute package: Installer2.msi, result: 0x0, restart: None
+[767C:1F9C][2022-02-01T14:05:45]i326: Removed dependency: {d7a860e6-9f16-429e-b689-4d05816ebd3a} on package provider: {A21A7069-2821-4394-9441-07CDBFA1ADA9}, package Installer1.msi
+[767C:1F9C][2022-02-01T14:05:45]i329: Removed package dependency provider: {A21A7069-2821-4394-9441-07CDBFA1ADA9}, package: Installer1.msi
+[767C:1F9C][2022-02-01T14:05:45]i301: Applying execute package: Installer1.msi, action: Uninstall, path: (null), arguments: ' ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7" MESSAGE="This is the default message from bundle prepared for Installer 1."'
+[7668:3F78][2022-02-01T14:05:45]i319: Applied execute package: Installer1.msi, result: 0x0, restart: None
+[767C:1F9C][2022-02-01T14:05:45]i351: Removing cached package: Installer2.msi, from path: C:\ProgramData\Package Cache\{C0B59F90-3A30-4401-8783-A2C3E64CA1DA}v1.0.0.0\
+[767C:1F9C][2022-02-01T14:05:45]i351: Removing cached package: Installer1.msi, from path: C:\ProgramData\Package Cache\{A21A7069-2821-4394-9441-07CDBFA1ADA9}v1.0.0.0\
+[767C:1F9C][2022-02-01T14:05:45]i372: Session end, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{d7a860e6-9f16-429e-b689-4d05816ebd3a}, resume: None, restart: None, disable resume: No
+[767C:1F9C][2022-02-01T14:05:45]i330: Removed bundle dependency provider: {d7a860e6-9f16-429e-b689-4d05816ebd3a}
+[767C:1F9C][2022-02-01T14:05:45]i352: Removing cached bundle: {d7a860e6-9f16-429e-b689-4d05816ebd3a}, from path: C:\ProgramData\Package Cache\{d7a860e6-9f16-429e-b689-4d05816ebd3a}\
+[767C:1F9C][2022-02-01T14:05:45]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{d7a860e6-9f16-429e-b689-4d05816ebd3a}, resume: None, restart initiated: No, disable resume: No
+[7668:3F78][2022-02-01T14:05:46]i399: Apply complete, result: 0x0, restart: None, ba requested restart:  No
+[7668:3F78][2022-02-01T14:06:23]i500: Shutting down, exit code: 0x0
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: Message1 = This is the default message from bundle prepared for Installer 1.
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: Message2 = This is the default message from bundle prepared for Installer 2.
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleAction = 3
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleElevated = 1
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleFileVersion = 1.0.0.0
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleInstalled = 1
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleLog = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall.log
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleLog_Installer1.msi = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_001_Installer1.msi.log
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleLog_Installer2.msi = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_000_Installer2.msi.log
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleManufacturer = Dust in the Wind
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleName = Bundle with MSI Packages - WiX Toolset Pill
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleOriginalSource = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\BundleWithMsiPackages.exe
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleOriginalSourceFolder = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleProviderKey = {d7a860e6-9f16-429e-b689-4d05816ebd3a}
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleRollbackLog_Installer1.msi = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_001_Installer1.msi_rollback.log
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleRollbackLog_Installer2.msi = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\uninstall_000_Installer2.msi_rollback.log
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleSourceProcessFolder = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleSourceProcessPath = c:\Projects\WiX Toolset Pills\Bundle with MSI Packages\sources\BundleWithMsiPackages\bin\Release\BundleWithMsiPackages.exe
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleTag = 
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleUILevel = 4
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixBundleVersion = 1.0.0.0
+[7668:3F78][2022-02-01T14:06:23]i410: Variable: WixStdBALanguageId = 1033
+[7668:3F78][2022-02-01T14:06:23]i007: Exit code: 0x0, restarting: No

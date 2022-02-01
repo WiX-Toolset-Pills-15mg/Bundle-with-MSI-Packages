@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+WiX Toolset Pills 15mg
+Copyright (C) 2019-2022 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!--
+====================================================================================================
+START: Overview
+====================================================================================================
+
+The main purpose of a bundle is to contain a list of packages (MSI or EXE packages) to be installed
+all in a single step.
+
+The bundle may provide also a GUI for gathering all necessary variables that are, later, passed as
+arguments to the packages being installed.
+
+This example is showing how to create a bundle containing two MSI packages.
+
+Note: The bundle is a WiX Toolset concept.
+
+NEXT: Bundle.wxs (DOWN)
+-->
+
+<!--
+====================================================================================================
+Step 1: Create Two Dummy MSI Projects
+====================================================================================================
+
+Create two installer projects as explained in the "My First Installer":
+    - https://github.com/WiX-Toolset-Pills-15mg/My-First-Installer
+Let's call them "Installer1" and "Installer2".
+
+These two MSI files will be packed in the bundle that we create now.
+    
+NEXT: Bundle.wxs (DOWN)
+-->
+
+<!--
+====================================================================================================
+Step 2: Add a new bundle project
+====================================================================================================
+
+Add a new bundle project:
+    - SolutionExplorer -> Right click on solution -> Add -> New Project... ->
+      "Bootstrapper Project for WiX v3"
+
+NEXT: Bundle.wxs (DOWN)
+-->
+
+<Wix
+    xmlns="http://schemas.microsoft.com/wix/2006/wi"
+    xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+
+    <Bundle
+        Name="Bundle with MSI Packages - WiX Toolset Pill"
+        Version="1.0.0.0"
+        Manufacturer="Dust in the Wind"
+        UpgradeCode="eef1a17e-e0ed-432c-b45b-6f5510e8ecb4">
+
+        <!--
+        ====================================================================================================
+        Step 3: Configure the Bootstrapper Application (and GUI)
+        ====================================================================================================
+        
+        The bootstrapper application is the logic that drives the entire bundle. It may also provide a GUI,
+        but this is optional.
+        
+        This example is using the default bootstrapper application (provided by WiX Toolset). It does two
+        important things:
+            - Displays a GUI with single dummy license agreement page;
+            - Installs all the packages provided in the chain.
+            
+        NEXT: Bundle.wxs (DOWN)
+        -->
+
+        <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
+
+        <!--
+        ====================================================================================================
+        Step 4: Create Public Variables
+        ====================================================================================================
+        
+        These two public variables will be sent to the two installers installed by this bundle.
+        
+        NEXT: Installer1Package.wxs
+        -->
+
+        <Variable
+            Name="Message1"
+            Type="string"
+            Value="This is the default message from bundle prepared for Installer 1."
+            bal:Overridable="yes" />
+
+        <Variable
+            Name="Message2"
+            Type="string"
+            Value="This is the default message from bundle prepared for Installer 2."
+            bal:Overridable="yes" />
+
+        <Chain>
+
+            <!--
+            ====================================================================================================
+            Step 7: Add packages to the chain
+            ====================================================================================================
+            
+            Important note: The order specified here is the actual order in which the packages are installed when
+            the bundle is executed.
+            
+            NEXT: install.bat
+            -->
+
+            <PackageGroupRef Id="Installer1PackageGroup" />
+            <PackageGroupRef Id="Installer2PackageGroup" />
+
+        </Chain>
+
+    </Bundle>
+
+</Wix>

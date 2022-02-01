@@ -6,8 +6,9 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>eef1a17e-e0ed-432c-b45b-6f5510e8ecb4</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>BundleWithMsi</OutputName>
+    <OutputName>BundleWithMsiPackages</OutputName>
     <OutputType>Bundle</OutputType>
+    <Name>BundleWithMsiPackages</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
@@ -48,7 +49,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="install-with-parameters.bat" />
+    <Content Include="install-without-parameters.bat" />
     <Content Include="uninstall.bat" />
     <Content Include="install.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

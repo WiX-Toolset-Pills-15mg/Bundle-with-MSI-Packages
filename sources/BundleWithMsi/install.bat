@@ -1,1 +1,0 @@
-BundleWithMsi.exe /l install.log

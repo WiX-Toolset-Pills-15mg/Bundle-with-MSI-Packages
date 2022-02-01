@@ -1,0 +1,1 @@
+BundleWithMsiPackages.exe /l install-without-parameters.log
