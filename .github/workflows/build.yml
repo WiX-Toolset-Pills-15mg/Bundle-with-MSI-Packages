@@ -21,7 +21,7 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
       
       - name: Restore NuGet packages
-        run: nuget restore ./sources/BundleWithMsi.sln
+        run: nuget restore ./sources/BundleWithMsiPackages.sln
       
       - name: Build the solution
-        run: msbuild ./sources/BundleWithMsi.sln
+        run: msbuild ./sources/BundleWithMsiPackages.sln

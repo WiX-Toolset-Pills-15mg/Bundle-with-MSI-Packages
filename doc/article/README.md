@@ -19,7 +19,7 @@ Before starting to create our bundle, let's create two dummy MSI projects that w
 - `Installer1.msi`
 - `Installer2.msi`
 
- Each installer will deploy a single text dummy file.
+Each installer will deploy a single text dummy file.
 
 The focus of the current tutorial is the bundle itself. Therefore, for more details about creating the dummy installers see the sources and the [My First Installer](https://github.com/WiX-Toolset-Pills-15mg/My-First-Installer) pill.
 
